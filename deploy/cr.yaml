@@ -1,0 +1,4 @@
+apiVersion: "binding.mysql.pivotal.io/v1alpha1"
+kind: "MysqlBinding"
+metadata:
+  name: "example"

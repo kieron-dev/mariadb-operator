@@ -1,0 +1,3 @@
+apiVersion: binding.mysql.pivotal.io/v1alpha1
+kind: MysqlBinding
+projectName: mysql-operator
