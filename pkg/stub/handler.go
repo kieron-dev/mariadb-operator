@@ -8,7 +8,7 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/pivotal-cf-experimental/mysql-operator/pkg/apis/binding/v1alpha1"
+	"github.com/kieron-pivotal/mariadb-operator/pkg/apis/binding/v1alpha1"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/operator-framework/operator-sdk/pkg/sdk"
