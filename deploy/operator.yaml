@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: mysql-operator
+  template:
+    metadata:
+      labels:
+        name: mysql-operator
+    spec:
+      containers:
+        - name: mysql-operator
+          image: cflondonservices/mysql-operator
+          command:
+          - mysql-operator
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace

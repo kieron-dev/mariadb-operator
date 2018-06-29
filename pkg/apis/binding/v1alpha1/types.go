@@ -22,8 +22,11 @@ type MysqlBinding struct {
 }
 
 type MysqlBindingSpec struct {
-	// Fill me
+	Username string `json:"username"`
+	Password string `json:"password"`
+	Database string `json:"database"`
+	Hostname string `json:"hostname"`
 }
 type MysqlBindingStatus struct {
-	// Fill me
+	Status string `json:"status" default:"pending"`
 }
